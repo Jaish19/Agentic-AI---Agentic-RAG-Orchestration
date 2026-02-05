@@ -126,6 +126,7 @@ currency_converter = st.sidebar.checkbox("💱 Currency Exchange Rates")
 # IMPORTANT: Replace with your actual API keys
 SERPAPI_KEY = "db2270af85b9be502ee9357b9c6fcf639c8dbb50eba8da99e6cff24724d67e00"
 os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENROUTER_API_KEY"] = "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"
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 params = {
