@@ -16,6 +16,7 @@ from agno.models.openrouter import OpenRouter
 
 
 os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENROUTER_API_KEY"] = "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"
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 # Dietary Planner Agent
@@ -31,7 +32,6 @@ dietary_planner = Agent(
         "If necessary, search the web using DuckDuckGo for additional information.",
     ],
     tools=[DuckDuckGoTools()],
-    show_tool_calls=True,
     markdown=True
 )
 
@@ -55,7 +55,6 @@ fitness_trainer = Agent(
         "If necessary, search the web using DuckDuckGo for additional information.",
     ],
     tools=[DuckDuckGoTools()],
-    show_tool_calls=True,
     markdown=True
 )
 
